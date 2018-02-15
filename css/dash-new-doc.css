@@ -1,0 +1,425 @@
+section.dash-content .signature .new-document{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: calc(-100% - 40px);
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    overflow-y: auto;
+    z-index: 101;
+}
+
+section.dash-content .signature .new-document .title{
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #b6b6b6;
+}
+
+section.dash-content .signature .new-document .title p{
+    width: 100%;
+}
+
+section.dash-content .signature .new-document .title p i{
+    float: right;
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+section.dash-content .signature .new-document .title p i:hover{
+    color: #0059b3;
+}
+
+section.dash-content .signature .new-document section.invoice-header{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+section.dash-content .signature .new-document section.highlight{
+    background-color: rgba(255, 221, 0, 0.3);
+}
+
+section.dash-content .signature .new-document section div.title{
+    background-color: #eeeeee;
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+section.dash-content .signature .new-document section span.label{
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block;
+    overflow:hidden;
+    white-space: nowrap;
+    min-width: 120px;
+    margin-right: 10px;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info,
+section.dash-content .signature .new-document section.invoice-header .invoice-info,
+section.dash-content .signature .new-document section.invoice-items .tbl,
+section.dash-content .signature .new-document section.invoice-footer .payment-info,
+section.dash-content .signature .new-document section.invoice-footer .invoice-totals,
+section.dash-content .signature .new-document section.invoice-observations .observations,
+section.dash-content .signature .new-document section.buttons .btn-proceed{
+    border: 1px solid rgba(0,0,0,0.2)
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info div.title{
+    width: 100%;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .select-customer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .select-customer select{
+    width: 100%;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .select-customer i{
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    margin: 0 10px;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .select-customer i:hover{
+    color: #0059b3;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .new-customer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .new-customer .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .new-customer .row input,
+section.dash-content .signature .new-document section.invoice-header .invoice-info .row input{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+}
+
+section.dash-content .signature .new-document section.invoice-header .customer-info .new-customer .row input:focus,
+section.dash-content .signature .new-document section.invoice-header .invoice-info .row input:focus{
+    background-color: rgba(255,221,0,0.3);
+}
+
+section.dash-content .signature .new-document section.invoice-header .invoice-info{
+    width: 25%;
+    margin-left: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.dash-content .signature .new-document section.invoice-header .invoice-info .row{
+    height: 33%;
+}
+
+section.dash-content .signature .new-document section.invoice-header .invoice-info .row input{
+    text-align: center;
+}
+
+section.dash-content .signature .new-document section.invoice-items,
+section.dash-content .signature .new-document section.payment-info{
+    width: 100%;
+    padding: 5px;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .thead,
+section.dash-content .signature .new-document section.invoice-items .tbl .tbody,
+section.dash-content .signature .new-document section.invoice-items .tbl .tfoot{
+    width: 100%;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .thead .row,
+section.dash-content .signature .new-document section.invoice-items .tbl .tbody .row,
+section.dash-content .signature .new-document section.invoice-items .tbl .tfoot .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+    align-items: center;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col{
+    padding: 0 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-1{
+    width: 2%;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-2{
+    width: 10%;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-2 input{
+    text-align: center;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-3{
+    width: 44%;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-4{
+    width: 20%;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .money input{
+    text-align: right;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-5{
+    width: 20%;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-6{
+    width: 2%;
+    text-align: center;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-7{
+    width: 2%;
+    text-align: center;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-7 i{
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .col-7 i:hover{
+    color: #0059b3;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl input{
+    width: 100%;
+    background-color: transparent;
+    padding: 2px 5px;
+    border: 1px solid #000;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl input[type=checkbox]{
+    vertical-align: middle;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .tfoot .add-item{
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+section.dash-content .signature .new-document section.invoice-items .tbl .tfoot .add-item:hover{
+    color: #0059b3;
+}
+
+section.dash-content .signature .new-document section.invoice-footer{
+    width: 100%;
+    height: 195px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.dash-content .signature .new-document section.invoice-footer section.payment-info{
+    width: 65%;
+    padding: 0;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .card-type input[type=radio]{
+    display: none;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .card-type label{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .card-type label span{
+    margin-right: 5px;
+    color: #000;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .card-type label:hover{
+    font-weight: bold;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .card-type input:checked + label{
+    font-weight: bold;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details .card-type input:checked + label span{
+    color: #0059b3;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details input{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .payment-info .payment-details input:focus{
+    background-color: rgba(255,221,0,0.3);
+}
+
+section.dash-content .signature .new-document section.invoice-footer .invoice-totals{
+    width: 35%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .invoice-totals .row{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .invoice-totals .row span{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .invoice-totals .row .title input{
+    width: 40px;
+    text-align: center;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+section.dash-content .signature .new-document section.invoice-footer .invoice-totals .row .title input:focus{
+    background-color: rgba(255,221,0,0.3);
+}
+
+section.dash-content .signature .new-document section.invoice-observations{
+    width: 100%;
+    padding: 5px;
+}
+
+section.dash-content .signature .new-document section.invoice-observations textarea{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 85px;
+    min-height: 85px;
+    border: 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+section.dash-content .signature .new-document section.buttons{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.dash-content .signature .new-document section.buttons .btn-proceed{
+    padding: 10px;
+    background-color: #eeeeee;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    text-align: center  ;
+}
+
+section.dash-content .signature .new-document section.buttons .btn-proceed:hover{
+    filter:brightness(80%);
+}

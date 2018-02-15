@@ -1,0 +1,224 @@
+.main-container .main-content section.dash-content .working-guide{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch-menu .menu-item{
+    width: 24%;
+    min-width: 200px;
+    padding: 10px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch-menu .menu-item:hover{
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,1);
+    box-shadow: 1px 1px 3px rgba(0,0,0,1);
+    background-color: #FFDD00;
+    font-weight: bold;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch-menu .menu-item i{
+    margin-right: 10px;
+}
+
+.main-container .main-content section.dash-content .small-charts #closure-tools{
+    background-color: rgb(79,142,247);
+}
+
+.main-container .main-content section.dash-content .small-charts #selling-pitch{
+    background-color: rgb(105,184,41)
+}
+
+.main-container .main-content section.dash-content .small-charts #notifications{
+    background-color: rgb(222,24,112)
+}
+
+.main-container .main-content section.dash-content .small-charts #handling-objections{
+    background-color: rgb(255,185,0)
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up{
+    position: absolute;
+    left: calc(-100% - 40px);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    -webkit-transition: left ease 0.5s;
+    -moz-transition: left ease 0.5s;
+    -ms-transition: left ease 0.5s;
+    -o-transition: left ease 0.5s;
+    transition: left ease 0.5s;
+    -webkit-box-shadow: 1px 1px 5px #000;
+    -moz-box-shadow: 1px 1px 5px #000;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .header{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .header i{
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .header i:hover{
+    color: #0059b3;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .content{
+    height: 100%;
+    margin-top: 10px;
+    overflow-y: auto;
+    color: #000;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container span.pitch-content{
+    font-size: 12px;
+    color: #000;
+    font-weight: normal;
+    display: none;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container{
+    padding: 5px;
+    background-color: rgba(255,255,255,1);
+    box-sizing: border-box;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container .pitch-title,
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container .objection-title{
+    width: calc(100% - 20px);
+    margin:10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container .pitch-title:hover,
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container .objection-title:hover{
+    color: #0059b3;
+}
+
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container .pitch-title i,
+.main-container .main-content section.dash-content .working-guide .pop-up .content .pitch-container .objection-title i{
+    float: right;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-container .main-content section.dash-content .working-guide .pitch{
+    margin:0;
+}
+
+.main-container .main-content section.dash-content .working-guide .section-left{
+    width: 20%;
+}
+
+.main-container .main-content section.dash-content .working-guide .section-center{
+    width: 39%;
+}
+
+.main-container .main-content section.dash-content .working-guide .section-right{
+    width: 39%;
+}
+
+
+
+.main-container .main-content section.dash-content .working-guide .pitch h4{
+    font-size: 14px;
+    margin: 5px 0;
+    font-style: italic;
+}
+
+
+
+.main-container .main-content section.dash-content .working-guide .pitch .pitch-menu{
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch ul li{
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch ul li i{
+    margin-right: 10px;
+}
+
+.main-container .main-content section.dash-content .working-guide .pitch ul li:hover{
+    border-left: 2px solid #0059b3;
+    color: #0059b3;
+}

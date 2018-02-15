@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Trebuchet MS", "serif";
+            box-sizing: border-box;
+        }
+
+        .logo{
+            width:100%;
+            height:50px;
+            background-color: #005182;
+            
+        }
+
+        .logo img{
+            float: left;
+            margin-left:20px;
+            width: 250px;
+            margin-top:10px;
+        }
+
+        .logo i{
+            display: block;
+            text-align: right;
+            font-style: italic;
+            color:#fff;
+        }
+
+        .logo i.costumer-name{
+            display: block;
+            font-weight:bold;
+            font-style: normal;
+        }        
+       
+        .logo div{
+            float: right;
+            margin: 5px 30px;
+        }
+
+        table#tbl-main tr td.mail-title{
+            text-align: center;
+            font-weight:bold;
+            font-size: 20px;
+        }
+
+        table#tbl-main tr td.mail-from{
+            padding-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        table#tbl-main tr td.mail-from i{
+            font-style: normal;
+            font-weight:bold;
+        }
+
+        table#tbl-main tr td.mail-from i.sender-email{
+            font-style: italic;
+            font-weight:normal;
+            text-decoration: underline;
+            color: #000be6;
+        }
+
+        table#tbl-main tr td.mail-arrow{
+            padding-top: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-style: italic;
+        }
+        
+        table#tbl-main tr td.content{
+            padding: 10px 0 40px 0;
+        }
+
+        table#tbl-main tr td.content div{
+            width:100%;
+            -webkit-box-shadow: -2px 2px 3px 0 rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px 2px 3px 0 rgba(0,0,0,0.75);
+            box-shadow: -2px 2px 3px 0 rgba(0,0,0,0.75);
+            margin: 20px auto 10px auto;
+            padding: 10px 30px;
+            border:0;
+            text-align: center;
+            background-color: #717175;            
+            font-size: 18px;
+            font-weight:bold;
+            box-sizing: border-box;
+            color:#fff;
+        }
+        
+        table#tbl-main tr.row-footer{
+            background: #ffffff; /* Old browsers */
+            background: -moz-linear-gradient(top, #ffffff 0%, #b7c4ce 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #ffffff 0%,#b7c4ce 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ffffff 0%,#b7c4ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b7c4ce',GradientType=0 );
+
+        }
+        table#tbl-main tr.row-footer td{
+            padding: 15px;
+        }
+        table#tbl-main tr.row-footer td a{
+            color: #e6000b;
+        }
+        table#tbl-main tr.row-footer td:first-child{
+            width:70%;
+            font-weight: bold;
+        }
+        table#tbl-main tr.row-footer td:last-child{
+            width:30%;
+        }
+        table#tbl-main tr.row-footer td:last-child i{
+            float: right;
+            margin-right:10px;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        table#tbl-main tr.row-footer td i.unsubscribe{
+            font-size: 12px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<table id="tbl-main" align="center" cellpadding="0" cellspacing="0" width="600">
+
+    <tr>
+        <td colspan="2" class="logo">
+            <img id="logo" src='http://cuponsign.tk/img/logo-tech.png' alt='Tech Signing' />
+            <div>
+                <i>dear</i>
+                <i class="costumer-name">[costumers-name]</i>                
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="mail-title">
+            Thank you for signing up at TechSigning.com
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="mail-from">
+            <i class="sender-name">Here below you have a new validation code that you may use to confirm your registration</i>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="mail-arrow">
+            <i class="fa fa-arrow-down"></i>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="content">
+            <div class="btn-review">
+                [code]
+            </div>
+        </td>
+    </tr>
+
+    <tr class="row-footer">
+        <td>
+            <i class="fa fa-registered" aria-hidden="true" id="copyright"></i><span style="color:#FAC600"> TECH</span><span style="color:#014981">SIGNING</span>, USA 2017 <br><br>
+            <i class="unsubscribe">If you prefer not to receive messages from this sender, please send a request from this link.
+                <a href="http://cuponsign.tk/unsubscribe.php">Unsubscribe</a></i>.
+        </td>
+        <td class="socials">
+            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>

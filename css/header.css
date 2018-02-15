@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import "sub-header.css";
+
+header{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav{
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    transform: translate(-50%);
+}
+
+header .logo{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%,0);
+    width: 250px;
+    height: 100px;
+    z-index: 100;
+    background: url("../images/logo.png") no-repeat;
+    background-size: contain;
+}
+
+header ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+header ul li{
+    margin: 0 10px;
+    padding: 10px 5px;
+    width: auto;
+    display: inline-flex;
+    justify-content: space-between;
+    transition-property: border;
+    transition-duration: 300ms;
+    white-space: nowrap;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+}
+
+header ul li.main-menu-item .menu-right{
+    transition-property: transform;
+    transition-duration: 500ms;
+    font-size: 10px;
+    line-height: 16px;
+    color: #fff;
+}
+
+header ul li.main-menu-item:hover{
+    cursor: pointer;
+    color:#FFDD00;
+}
+
+header ul li.selected{
+    color:#FFDD00;
+    border-bottom: 2px solid #FFDD00;
+}
+
+header ul li.selected a{
+    color:#FFDD00;
+}
+
+header ul li.selected .menu-right{
+    color:#FFDD00;
+}
+
+header ul li.main-menu-item:hover .menu-right{
+    transform: rotate(180deg);
+    color:#FFDD00;
+}
+
+header ul li.main-menu-item:hover > a{
+    color: #FFDD00;
+}
+
+header ul li .menu-right{
+    float: right;
+    margin-left: 10px;
+}
+
+header .sec-container nav ul ul{
+    visibility: hidden; /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    display: block;
+}
+
+header .sec-container nav ul li:hover ul{
+    visibility: visible; /* shows sub-menu */
+    opacity: 1;
+    z-index: 100;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+header .sec-container nav ul ul li{
+    display: block;
+    width: 200px;
+    background-color: rgba(255,255,255,1);
+    margin:0;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header .sec-container nav ul ul li.last{
+    border-bottom: 2px solid #ffdd00;
+}
+
+header .sec-container nav ul ul li:hover{
+    background-color: #ffdd00;
+    border-left: 3px solid #000;
+}
+
+header .sec-container nav ul ul li a{
+    color:#000;
+    font-weight: normal;
+    padding: 10px;
+}
+
+header .header-title{
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+header .header-title .content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .header-title h1,
+header .header-title h3{
+    color:#fff;
+}
+
+header .header-title h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+header .header-title .sub-title{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+header .header-title .sub-title div.sub1{
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    float: left;
+    white-space: nowrap;
+}
+
+header .header-title .sub-title div.sub2{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 18px;
+    margin-left: 5px;
+}
+
+header .header-title .content .btn-exploore-now{
+    height: 42px;
+    width: 250px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-top:50px;
+    transform: translate(-50%);
+    left:50%;
+}
+
+header .header-title .content .btn-exploore-now:hover .btn-slider{
+    left: calc(100% - 40px);
+    background-color: #fff;
+
+}
+
+header .header-title .content .btn-exploore-now:hover .btn-text1{
+    visibility: hidden;
+    opacity: 0;
+}
+
+header .header-title .content .btn-exploore-now:hover .btn-text2{
+    visibility: visible;
+    opacity: 1;
+}
+
+header .header-title .content .btn-exploore-now .btn-text1,
+header .header-title .content .btn-exploore-now .btn-text2{
+    position: absolute;
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    font-weight: bold;
+    color: #ffdd00;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+header .header-title .content .btn-exploore-now .btn-text1{
+    visibility: visible;
+    opacity: 1;
+}
+
+header .header-title .content .btn-exploore-now .btn-text2{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+header .header-title .content .btn-exploore-now .btn-slider{
+    width:40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #a9b1b7;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left:0;
+    transition: left 500ms, right 500ms, background-color 500ms;
+
+
+}
+
+header .header-title .content .btn-exploore-now .btn-slider i{
+    color: #ffdd00;
+}

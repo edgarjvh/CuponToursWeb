@@ -1,0 +1,108 @@
+.main-container .main-content section.dash-content .training{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-container .main-content section.dash-content .training .curses-list{
+    width: 25%;
+    max-width: 250px;
+    height: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.main-container .main-content section.dash-content .training .curses-title{
+    width: calc(100% - 20px);
+    margin:10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.main-container .main-content section.dash-content .training .curses-title:hover{
+    color: #0059b3;
+}
+
+.main-container .main-content section.dash-content .training .curses-title i{
+    float: right;
+    font-size: 12px;
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul{
+    list-style: none;
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul li{
+    width: 100%;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul li.active{
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul li.active > i{
+    color: #0059b3;
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul li:hover i{
+    color: #0059b3;
+}
+
+.main-container .main-content section.dash-content .training .curses-list ul li i{
+    margin-right: 10px;
+}
+
+.main-container .main-content section.dash-content .training .curses-content{
+    width: 100%;
+    margin-left: 10px;
+    height: 100%;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.main-container .main-content section.dash-content .training .curses-content .videos-list{
+    width: 100%;
+    height: 64%;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    padding: 5px;
+}
+
+.main-container .main-content section.dash-content .training .curses-content .comments{
+    width: 100%;
+    height: 35%;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    padding: 5px;
+}
+

@@ -1,0 +1,158 @@
+@import "general.css";
+@import "dash-header.css";
+@import "dash-sidebar.css";
+
+html, body {
+    height:100%;
+    margin:0;
+}
+
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: #fff;
+    position: relative;
+    overflow:hidden;
+}
+
+.main-container{
+    width: 100%;
+    height:calc(100% - 50px);
+    display:flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+}
+
+.main-container .main-content{
+    -webkit-flex: 1;
+    flex:1;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.main-container .main-content section.dash-content{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .main-content section.dash-content .small-charts{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter{
+    width: 24%;
+    min-width: 250px;
+    height: 150px;
+    -webkit-box-shadow: 1px 5px 5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 1px 5px 5px rgba(0,0,0,0.8);
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-one{
+    height: 60%;
+    position: relative;
+    line-height: 50px;
+    z-index: 1000;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-two{
+    height: 40%;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-one p{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #dbdbdb;
+    font-weight: bold;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-one span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-one i{
+    position: absolute;
+    font-size: 100px;
+    right: -20px;
+    top: 0;
+    color: #dbdbdb;
+    transform: rotate(15deg);
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-two p{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #dbdbdb;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    width: 100%;
+}
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-two p:hover{
+    opacity: 0.7;
+}
+
+.main-container .main-content section.dash-content .small-charts .resume-counter .row-two i{
+    position: absolute;
+    right: 5px;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #fff;
+}
+
+.main-container .main-content section.dash-content .small-charts #new-messages{
+    background-color: rgb(79,142,247);
+}
+
+.main-container .main-content section.dash-content .small-charts #new-tasks{
+    background-color: rgb(105,184,41)
+}
+
+.main-container .main-content section.dash-content .small-charts #new-orders{
+    background-color: rgb(222,24,112)
+}
+
+.main-container .main-content section.dash-content .small-charts #new-tickets{
+    background-color: rgb(255,185,0)
+}
+
+.main-container .main-content section.dash-content .large-chart{
+    text-align: center;
+    margin: 20px auto 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+
+}
